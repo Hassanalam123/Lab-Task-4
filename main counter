@@ -1,0 +1,23 @@
+
+public class maincounter {
+
+	public static void main(String[] args) {
+		
+
+		
+
+		
+		AlarmClock obj2=new AlarmClock();
+		obj2.setAlarm(0,59);
+	
+	int a=0;
+	while(a<3600)
+	{
+		obj2.tick();
+		a++;
+		
+		
+	}
+
+}
+}
