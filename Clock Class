@@ -1,0 +1,38 @@
+public class Clock  {
+      private Counter  hours, mins, secs;
+      public Clock(){
+	hours = new Counter(24);
+	mins = new Counter(60);
+	secs = new Counter(60);
+     }
+      
+     public int hrsq(){ return hours.viewCount();}
+   
+   
+     public int minsq(){ return mins.viewCount();}
+     
+    	 
+     
+    		 public void tick( ) {
+    	 
+    
+	
+	   System.out.println( hours.viewCount() + ":" + mins.viewCount()+ ":" +secs.viewCount() );
+	   
+	   secs.increament( );
+	if (secs.viewCount()== 0) {
+	       mins.increament();
+	if((secs.viewCount()==0) && (mins.viewCount()== 0))
+		hours.increament( );
+	
+	
+	
+	
+	
+}
+
+	
+
+
+   }
+}
