@@ -1,0 +1,14 @@
+
+public class Sportscar implements IDriveable {
+ public void start()
+ {
+	 System.out.println("Start the car");
+ }
+public void stop(){
+	System.out.println("Stop the car");
+}
+public void turn(){
+	System.out.println("Turning");
+}
+}
+
