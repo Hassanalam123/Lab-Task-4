@@ -1,0 +1,27 @@
+
+
+	public class AlarmClock extends Clock {
+	      private boolean alrmOn;
+	      private int hrSet, minSet;
+	      public AlarmClock( ) 
+	      {
+	    	  alrmOn = false;
+	      }  
+	      
+	      public void setAlarm(int hr, int min) {
+		
+	    hrSet = hr; 
+		minSet = min; 
+		alrmOn = true;
+	     }
+	      public void tick( ) {
+		super.tick( );
+		
+		if (( hrsq() == hrSet)&&(minsq() == minSet)&&alrmOn){
+			
+			System.out.println("ring,ring,ring");
+	      }
+	    
+	
+	      }	
+}
